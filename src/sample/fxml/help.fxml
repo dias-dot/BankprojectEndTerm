@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="335.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.classes.Help">
+
+    <AnchorPane prefHeight="72.0" prefWidth="335.0" style="-fx-background-color: #ff8400;" BorderPane.alignment="CENTER">
+        <children>
+            <MenuButton fx:id="Menubar" alignment="CENTER" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="91.0" style="-fx-background-color: #ff8400;" text="Help">
+                <items>
+                    <MenuItem fx:id="Menu_help" mnemonicParsing="false" text="Menu" />
+                    <MenuItem fx:id="Menu_message" mnemonicParsing="false" text="Message" />
+                    <MenuItem fx:id="Menu_bank" mnemonicParsing="false" text="My Bank" />
+                    <MenuItem fx:id="Menu_deposit" mnemonicParsing="false" text="Deposit" />
+                    <MenuItem fx:id="Menu_credit" mnemonicParsing="false" text="Credit" />
+                    <MenuItem fx:id="Menu_contact_us" mnemonicParsing="false" text="Contact us" />
+                    <MenuItem fx:id="Menu_log_out" mnemonicParsing="false" text="Log Out" />
+                </items>
+                <font>
+                    <Font name="Times New Roman" size="17.0" />
+                </font>
+            </MenuButton>
+            <Label fx:id="field_name" alignment="CENTER" layoutX="144.0" layoutY="24.0" prefHeight="25.0" prefWidth="128.0" text="SAFE BANK" textAlignment="CENTER">
+                <font>
+                    <Font name="Times New Roman" size="15.0" />
+                </font>
+            </Label>
+        </children>
+    </AnchorPane>
+    <Accordion />
+    <Accordion />
+   <Label fx:id="information_help" alignment="TOP_LEFT" layoutY="131.0" prefHeight="72.0" prefWidth="335.0" style="-fx-font-family: Times New Roman; -fx-font-size: 15;" text="Click button Credit, then, click take credit, &#10;after that write informations, which are asked.&#10;" textAlignment="JUSTIFY" />
+   <Label fx:id="main_question_help" alignment="CENTER" layoutX="-1.0" layoutY="71.0" prefHeight="60.0" prefWidth="336.0" style="-fx-font-family: Times New Roman; -fx-background-color: skyblue; -fx-font-size: 25;" text="How to take credit?" />
+   <RadioButton fx:id="answer_yes" layoutX="204.0" layoutY="195.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="62.0" text="Yes" />
+   <RadioButton fx:id="answer_no" layoutX="266.0" layoutY="195.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="54.0" text="No" />
+   <Label fx:id="question_help" layoutX="14.0" layoutY="191.0" prefHeight="25.0" prefWidth="184.0" style="-fx-font-family: Times NEw Roman; -fx-font-size: 14;" text="Was the information  helpful?" />
+   <Label fx:id="main_question_help1" alignment="CENTER" layoutX="-1.0" layoutY="216.0" prefHeight="60.0" prefWidth="336.0" style="-fx-font-family: Times New Roman; -fx-background-color: skyblue; -fx-font-size: 25;" text="How to pay credit?" />
+   <Label fx:id="information_help1" alignment="TOP_LEFT" layoutY="276.0" prefHeight="72.0" prefWidth="335.0" style="-fx-font-family: Times New Roman; -fx-font-size: 15;" text="Click button Credit, then, click pay credit, &#10;after that write informations, which are asked.&#10;" textAlignment="JUSTIFY" />
+   <Label fx:id="question_help1" layoutX="14.0" layoutY="323.0" prefHeight="25.0" prefWidth="184.0" style="-fx-font-family: Times NEw Roman; -fx-font-size: 14;" text="Was the information  helpful?" />
+   <RadioButton fx:id="answer_yes1" layoutX="204.0" layoutY="327.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="62.0" text="Yes" />
+   <RadioButton fx:id="answer_no1" layoutX="266.0" layoutY="327.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="54.0" text="No" />
+   <Label fx:id="main_question_help2" alignment="CENTER" layoutX="-1.0" layoutY="348.0" prefHeight="60.0" prefWidth="336.0" style="-fx-font-family: Times New Roman; -fx-background-color: skyblue; -fx-font-size: 25;" text="How to open deposit?" />
+   <Label fx:id="information_help2" alignment="TOP_LEFT" layoutX="-12.0" layoutY="419.0" prefHeight="72.0" prefWidth="335.0" style="-fx-font-family: Times New Roman; -fx-font-size: 15;" text="Click button Deposit, then, click open deposit, &#10;after that write informations, which are asked.&#10;" textAlignment="JUSTIFY" />
+   <Label fx:id="question_help2" layoutX="14.0" layoutY="465.0" prefHeight="25.0" prefWidth="184.0" style="-fx-font-family: Times NEw Roman; -fx-font-size: 14;" text="Was the information  helpful?" />
+   <RadioButton fx:id="answer_yes2" layoutX="204.0" layoutY="469.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="62.0" text="Yes" />
+   <RadioButton fx:id="answer_no2" layoutX="268.0" layoutY="469.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="54.0" text="No" />
+   <Label fx:id="another_ques" layoutX="51.0" layoutY="494.0" prefHeight="32.0" prefWidth="237.0" style="-fx-background-color: skyblue;" text="If you have another question write here" />
+   <TextField fx:id="text_ques" layoutX="14.0" layoutY="526.0" prefHeight="32.0" prefWidth="249.0" promptText="Write here" />
+   <Button fx:id="search" layoutX="266.0" layoutY="526.0" mnemonicParsing="false" text="Search" />
+
+</AnchorPane>
